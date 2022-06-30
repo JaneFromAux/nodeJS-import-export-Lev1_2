@@ -27,7 +27,7 @@ function positionN(arr, index) {
         return posN
     }
 }
-// remove certain element from array
+
 function removeIt(arr, removeEle) {
     return arr.filter(ele => ele === removeEle)
 }
@@ -48,6 +48,23 @@ function randomNum(num1, num2) {
     }
 }
 
+function firstUpper(word) {
+    let firstLetter = (word).slice(0, 1);
+    return (firstLetter.toUpperCase()).concat((word).slice(1, word.length));
+}
+function allUpper(word) {
+    return word.toUpperCase();
+}
+function lastLetterTest(word1, word2) {
+    let last1 = (word1).slice(word1.length - 1, word1.length)
+    let last2 = (word1).slice(word1.length - 1, word1.length)
+    if (last1 === last2) {
+        return true
+    } else {
+        return false
+    }
+}
+
 module.exports = {
     firstIndex,
     allWithoutLast,
@@ -57,5 +74,8 @@ module.exports = {
     removeIt,
     uniqueEle,
     sumArr,
-    randomNum
+    randomNum,
+    firstUpper,
+    allUpper,
+    lastLetterTest
 }

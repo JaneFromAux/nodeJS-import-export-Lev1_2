@@ -1,5 +1,5 @@
 const { names, numbers } = require('./data');
-const { firstIndex, allWithoutLast, last, allWhithoutFirst, positionN, removeIt, uniqueEle, sumArr, randomNum } = require('./functions');
+const { firstIndex, allWithoutLast, last, allWhithoutFirst, positionN, removeIt, uniqueEle, sumArr, randomNum, firstUpper, allUpper, lastLetterTest } = require('./functions');
 
 // const index0 = firstIndex(names);
 // console.log(index0);
@@ -36,5 +36,14 @@ const { firstIndex, allWithoutLast, last, allWhithoutFirst, positionN, removeIt,
 // const sum = sumArr(numbers);
 // console.log(sum);
 
-const randi = randomNum(5, 7);
-console.log(randi)
+// const randi = randomNum(5, 7);
+// console.log(randi)
+
+// const firstLetterUp = firstUpper("case");
+// console.log(firstLetterUp)
+
+// const allLettersUp = allUpper("case");
+// console.log(allLettersUp)
+
+const lastLettersEqual = lastLetterTest("case", "chase");
+console.log(lastLettersEqual);
